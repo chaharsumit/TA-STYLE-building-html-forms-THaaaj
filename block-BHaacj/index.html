@@ -1,0 +1,256 @@
+<!--
+- Create a page according to the layout shown below.
+
+![Building HTML forms Assignment level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-2.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey</title>
+  <link rel="stylesheet" href="assets/stylesheet/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container flex">
+      <div class="brand-container">
+        <a href="#" class="brand-link flex">
+          <img src="assets/media/logo.png" alt="brand logo" class="brand-image">
+          <p class="brand text-lg">journey</p>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-menu flex">
+          <li class="nav-item text-sm">home</li>
+          <li class="nav-item text-sm">top destinations</li>
+          <li class="nav-item text-sm">recommended places</li>
+          <li class="nav-item text-sm">contact us</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero container flex-column">
+        <div class="hero-tagline">
+          <h1 class="heading hero-heading text-xlg">let's begin</h1>
+          <img src="assets/media/dots-3.png" alt="dots-image" class="hero-dots">
+          <p class="text-md hero-text">We assist you to choose the best.</p>
+          <div class="circle-icon">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <form action="login" method="post" class="hero-form flex">
+          <fieldset class="field flex">
+            <label class="col-1-2 text-sm">
+              Choose Your Desination
+              <input type="text" name="destination" class="form-control" placeholder="Type your destination...">
+            </label>
+            <label class="col-1-3 text-sm">
+              Check In Date
+              <input type="text" name="checkin" class="form-control" placeholder="Check In">
+            </label>
+            <label class="col-1-3 text-sm"> 
+              Check Out Date
+              <input type="text" name="checkout" class="form-control" placeholder="Check Out">
+            </label>
+          </fieldset>
+          <fieldset class="field flex">
+            <label class="col-1-3 text-sm">
+              How many rooms?
+              <input type="number" name="rooms" class="form-control" placeholder="1 Room">
+            </label>
+            <label class="col-1-4 text-sm">
+              Adult
+              <input type="number" name="adult" class="form-control" placeholder="1">
+            </label>
+            <label class="col-1-4 text-sm">
+              Children
+              <input type="number" name="children" class="form-control" placeholder="0">
+            </label>
+            <button class="btn form-btn col-1-2 text-sm">check availability</button>
+          </fieldset>
+        </form>
+    </section>
+    <section class="tagline-section container">
+      <div class="tagline-container">
+        <h2 class="text-lg tagline-heading">your <span> journey</span> is our priority</h2>
+        <p class="text-sm tagline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo debitis inventore omnis eos non et quidem magnam culpa iusto ex nobis ratione id impedit cupiditate, voluptatibus totam eius, molestiae nesciunt reprehenderit mollitia?</p>
+        <button class="btn btn-md text-sm">continue explore</button>
+      </div>
+    </section>
+    <section class="places container">
+      <div class="place-card flex">
+        <img src="assets/media/tm-img-01.jpg" alt="rio de janeiro" class="place-image">
+        <div class="card place-card-right">
+          <div class="card-nav card-nav-left flex">
+            <div class="nav-square">
+              <a href="#" class="nav-square-link">
+                <i class="fas fa-angle-left"></i>
+              </a>
+            </div>
+            <div class="nav-square">
+              <a href="#" class="nav-square-link">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-item text-md">Europe's most visited places</h3>
+          <p class="card-item text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi, tempore veritatis quia omnis aliquid. Ex amet, ad deleniti recusandae, illum praesentium, distinctio autem et in quod velit soluta quasi.</p>
+          <button class="btn btn-md btn-light card-item">continue reading</button>
+        </div>
+      </div>
+      <div class="place-card flex">
+        <div class="card place-card-left bg-purple">
+          <div class="card-nav card-nav-right flex">
+            <div class="nav-square">
+              <a href="#" class="nav-square-link">
+                <i class="fas fa-angle-left"></i>
+              </a>
+            </div>
+            <div class="nav-square">
+              <a href="#" class="nav-square-link">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-item text-md">Asia's most visited places</h3>
+          <p class="card-item text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi, tempore veritatis quia omnis aliquid. Ex amet, ad deleniti recusandae, illum praesentium, distinctio autem et in quod velit soluta quasi.</p>
+          <button class="btn btn-md btn-light card-item">continue reading</button>
+        </div>
+        <img src="assets/media/tm-img-02.jpg" alt="rio de janeiro" class="place-image">
+      </div>
+      <div class="place-card flex">
+        <img src="assets/media/tm-img-03.jpg" alt="rio de janeiro" class="place-image">
+        <div class="card place-card-right">
+          <div class="card-nav card-nav-left flex">
+            <div class="nav-square">
+              <a href="#" class="nav-square-link">
+                <i class="fas fa-angle-left"></i>
+              </a>
+            </div>
+            <div class="nav-square">
+              <a href="#" class="nav-square-link">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-item text-md">America's most visited places</h3>
+          <p class="card-item text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi, tempore veritatis quia omnis aliquid. Ex amet, ad deleniti recusandae, illum praesentium, distinctio autem et in quod velit soluta quasi.</p>
+          <button class="btn btn-md btn-light card-item">continue reading</button>
+        </div>
+      </div>
+    </section>
+    <section class="world container flex">
+      <figure class="continent">
+        <img src="assets/media/north-america.png" alt="north-america">
+        <figcaption class="text-sm">north-america</figcaption>
+      </figure>
+      <figure class="continent">
+        <img src="assets/media/south-america.png" alt="south-america">
+        <figcaption class="text-sm">south-america</figcaption>
+      </figure>
+      <figure class="continent">
+        <img src="assets/media/europe.png" alt="europe">
+        <figcaption class="text-sm">europe</figcaption>
+      </figure>
+      <figure class="continent">
+        <img src="assets/media/asia.png" alt="asia">
+        <figcaption class="text-sm">asia</figcaption>
+      </figure>
+      <figure class="continent">
+        <img src="assets/media/africa.png" alt="africa">
+        <figcaption class="text-sm">africa</figcaption>
+      </figure>
+      <figure class="continent">
+        <img src="assets/media/australia.png" alt="australia">
+        <figcaption class="text-sm">austraia</figcaption>
+      </figure>
+      <figure class="continent">
+        <img src="assets/media/antartica.png" alt="antartica">
+        <figcaption class="text-sm">antartica</figcaption>
+      </figure>
+    </section>
+    <section class="trip-section container">
+      <div class="trip-card flex">
+        <img src="assets/media/tm-img-06.jpg" alt="beach" class="trip-image">
+        <div class="trip-info">
+          <h5 class="heading trip-heading">asia resort hotel</h5>
+          <p class="city text-sm">Singapore</p>
+          <p class="city-info text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, odio nostrum sunt inventore.</p>
+        </div>
+        <img src="assets/media/button-curve.png" alt="button-curve" class="button-curve">
+        <div class="trip-cost">
+          <h3 class="text-md">$440</h3>
+          <p class="heading text-sm">continue reading</p>
+        </div>
+      </div>
+      <div class="trip-card flex">
+        <img src="assets/media/tm-img-07.jpg" alt="bridge" class="trip-image">
+        <div class="trip-info">
+          <h5 class="heading trip-heading">asia resort hotel</h5>
+          <p class="city text-sm">Singapore</p>
+          <p class="city-info text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, odio nostrum sunt inventore.</p>
+        </div>
+        <img src="assets/media/button-curve.png" alt="button-curve" class="button-curve">
+        <div class="trip-cost">
+          <h3 class="text-md">$450</h3>
+          <p class="heading text-sm">continue reading</p>
+        </div>
+      </div>
+      <div class="trip-card flex">
+        <img src="assets/media/tm-img-05.jpg" alt="bridge" class="trip-image">
+        <div class="trip-info">
+          <h5 class="heading trip-heading">asia resort hotel</h5>
+          <p class="city text-sm">Singapore</p>
+          <p class="city-info text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, odio nostrum sunt inventore.</p>
+        </div>
+        <img src="assets/media/button-curve.png" alt="button-curve" class="button-curve">
+        <div class="trip-cost">
+          <h3 class="text-md">$460</h3>
+          <p class="heading text-sm">continue reading</p>
+        </div>
+      </div>
+      <div class="trip-card flex">
+        <img src="assets/media/tm-img-04.jpg" alt="river" class="trip-image">
+        <div class="trip-info">
+          <h5 class="heading trip-heading">asia resort hotel</h5>
+          <p class="city text-sm">Singapore</p>
+          <p class="city-info text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, odio nostrum sunt inventore.</p>
+        </div>
+        <img src="assets/media/button-curve.png" alt="button-curve" class="button-curve">
+        <div class="trip-cost">
+          <h3 class="text-md">$470</h3>
+          <p class="heading text-sm">continue reading</p>
+        </div>
+      </div>
+      <button class="btn btn-md">show more places</button>
+    </section>
+    <section class="map container">
+      <figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.8881481791873!2d76.35319631560672!3d32.20724448114783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1629887253818!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </figure> 
+      <form action="login" method="post" class="map-form">
+        <fieldset class="flex map-field">
+          <input type="text" name="name" placeholder="Name" class="col-1-3">
+          <input type="email" name="email" placeholder="Email" class="col-1-3">
+          <input type="text" name="subject" placeholder="Subject" class="col-1-2">
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="col-1-2"></textarea>
+          <button class="btn btn-md col-1-2">send message now</button>
+        </fieldset>
+      </form>  
+    </section>
+  </main>
+  <footer class="footer container">
+    <small class="text-sm">Copyright &copy; 2020 Your Company.</small>
+  </footer>
+</body>
+</html>
