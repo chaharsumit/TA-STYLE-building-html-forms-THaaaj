@@ -1,0 +1,414 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #E6E6E6;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.text-xlg{
+  font-size: 52px;
+}
+
+.text-lg{
+  font-size: 42px;
+}
+
+.text-md{
+  font-size: 24px;
+}
+
+.text-sm{
+  font-size: 14px;
+}
+
+.btn{
+  border: none;
+  font-weight: 700;
+  background-color: #69C6BA;
+  color: white;
+  text-transform: uppercase;
+  padding: 18px;
+}
+.btn-light{
+  color: #69C6BA;
+  background-color: #ffffff;
+}
+.btn-md{
+  width: 220px;
+  padding: 18px;
+}
+
+section{
+  box-shadow: 0 0 5px #00000028;
+}
+
+/* header */
+
+.header{
+  background-color: white;
+  padding: 32px 0;
+}
+
+.header .container{
+  padding: 0 120px;
+}
+
+.brand{
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  margin-left: 10px;
+  vertical-align: middle;
+  padding-bottom: 12px;
+}
+
+.nav-item{
+  font-weight: 800;
+  margin-left: 62px;
+  color: #272727;
+  text-transform: capitalize; 
+}
+
+.heading{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* hero styles */
+.hero{
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),url(../media/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+} 
+
+.hero-tagline{
+  color: white;
+  text-align: center;
+}
+
+.circle-icon{
+  width: 52px;
+  height: 52px;
+  margin: 24px auto 0 auto;
+  background-color: #69C6BA;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-form{
+  background-color: rgb(247, 244, 244);
+  padding: 32px;
+  width: 900px;
+  flex-wrap: wrap;
+  margin-top: 120px;
+}
+
+.form-control{
+  border: none;
+  outline: 0;
+  padding: 19px 12px;
+  background-color: #F5F5F5;
+  width: 100%;
+  font-size: 16px;
+}
+
+.field{
+  width: 48%;
+  flex-wrap: wrap;
+  height: 180px;
+  align-content: space-between;
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+}
+
+.col-1-2{
+  width: 100%;
+}
+
+.col-1-3{
+  width: 46%;
+}
+
+.col-1-4{
+  width: 25%;
+}
+
+.form-btn{
+  background-color: #69C6BA;
+}
+
+
+/* tagline section styles */
+.tagline-section{
+  text-align: center;
+  padding: 62px 250px;
+}
+
+.tagline-heading{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.tagline-heading span{
+  font-weight: 700;
+}
+.tagline-text, .tagline-heading{
+  padding-bottom: 32px;
+}
+.tagline-text{
+  color: #5B5D60;
+}
+
+/* places styles */
+.places{
+  background-color: #ffffff;
+}
+.place-image{
+  display: block;
+  height: 100%;
+  flex: 0 1 50%;
+}
+.card{
+  flex: 0 1 48%;
+  background-color: #69C6BA;
+  padding: 46px 46px;
+  color: #ffffff;
+  position: relative;
+}
+.place-card-right{
+  right: 80px;
+}
+.place-card-left{
+  left: 80px;
+}
+.card h3{
+  font-weight: 700;
+}
+.card-item{
+  margin-bottom: 18px;
+}
+
+.bg-purple{
+  background-color: #C66995;
+}
+.bg-purple button{
+  color: #C66995;
+}
+.card-nav{
+  position: absolute;
+  width: 140px;
+  justify-content: flex-start;
+  top: 120px;
+}
+.card-nav-right{
+  right: -140px;
+}
+.card-nav-left{
+  left: -125px;
+}
+.nav-square{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #49484893;
+  margin-right: 5px; 
+}
+.nav-square-link{
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* world style */
+.world figure{
+  padding: 32px;
+  background-color: #69C6BA;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.world figure:hover{
+  background-color: #C66995;
+}
+
+/* trip card styles */
+
+.trip-section{
+  padding: 62px 0;
+  background-color: #ffffff;
+} 
+.trip-section button{
+  display: block;
+  margin: 0 auto;
+}
+.trip-card{
+  position: relative;
+  width: 70%;
+  margin: 32px auto;
+  border: 1px solid #E6E6E6;
+}
+.trip-image, .trip-cost{
+  flex: 0 1 25%;
+}
+.trip-image{
+  display: block;
+  align-self: stretch;
+}
+.trip-info{
+  flex: 0 1 50%;
+  align-self: center;
+  padding: 20px;
+}
+.trip-heading{
+  margin-bottom: 8px;
+}
+.city{
+  font-weight: 700;
+  color: #C66995;
+  margin-bottom: 24px;
+}
+
+.city-info{
+  color: rgb(134, 134, 134);
+}
+
+.trip-cost{
+  background-color: #69C6BA;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 800;
+}
+.trip-cost h3{
+  margin-bottom: 18px;
+}
+.button-curve{
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 75%;
+  align-self: stretch;
+}
+
+/* map form styles */
+
+.map{
+  position: relative;
+}
+.map figure{
+  height: 600px;
+}
+.map-form{
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 35%;
+  padding: 32px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.204);
+}
+
+.map-field{
+  flex-wrap: wrap;
+}
+
+.map-field input,textarea{
+  margin-bottom: 18px;
+  padding: 12px 16px;
+  border: none;
+  background-color: #F5F5F5;
+}
+
+
+/* footer */
+.footer{
+  background-color: #69C6BA;
+  padding: 32px 0;
+  text-align: center;
+  color: #ffffff;
+}
